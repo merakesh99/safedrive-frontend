@@ -124,7 +124,7 @@ export default function Sidebar() {
                 </Link>
               </li>
 
-              <li className="items-center">
+              {/* <li className="items-center">
                 <Link href="/admin/settings">
                   <a
                     href="#pablo"
@@ -146,7 +146,7 @@ export default function Sidebar() {
                     Settings
                   </a>
                 </Link>
-              </li>
+              </li> */}
               <li className="items-center">
                 <Link href="/admin/DriverList">
                   <a
@@ -183,7 +183,7 @@ export default function Sidebar() {
                   >
                     <i
                       className={
-                        "fas fa-user mr-2 text-sm " +
+                        "fas fa-tools mr-2 text-sm " +
                         (router.pathname.indexOf("/admin/Entry") !== -1
                           ? "opacity-75"
                           : "text-blueGray-300")

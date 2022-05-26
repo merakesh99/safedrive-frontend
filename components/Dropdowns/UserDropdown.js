@@ -73,6 +73,15 @@ const UserDropdown = () => {
         }
       >
         <a
+          href="/admin/dashboard"
+          className={
+            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+          }
+          // onClick={(e) => e.preventDefault()}
+        >
+         Dashboard
+        </a>
+        <a
           href="/profile"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
@@ -81,7 +90,7 @@ const UserDropdown = () => {
         >
           My Profile
         </a>
-        <a
+        {/* <a
           href="/setting"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
@@ -89,7 +98,7 @@ const UserDropdown = () => {
           onClick={(e) => e.preventDefault()}
         >
           Setting
-        </a>
+        </a> */}
         <a
           href="#pablo"
           className={
