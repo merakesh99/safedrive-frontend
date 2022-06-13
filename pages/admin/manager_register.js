@@ -48,7 +48,7 @@ class Register extends Component {
             if (response.status == 201) {
                 console.log("201 and success")
 
-                this.setState({ message: "Register Successfully Done" })
+                this.setState({ message: "Register Successfully Done! Welcome mail sent on your email id" })
             }
 
 
@@ -66,7 +66,7 @@ class Register extends Component {
                 <Sidebar />
                 <div className="container-fluid mx-auto px-4 h-full" style={{ backgroundColor: "rgba(30, 41, 59)" }} ><br /><br /><br /><br /><br /><br />
                     {/*  */}
-                    {this.state.message == 'Register Successfully Done' ? <div class="form-group">
+                    {this.state.message == 'Register Successfully Done! Welcome mail sent on your email id' ? <div class="form-group">
                         <div class="text-center py-2">
                             <h2 style={{ color: "green" }}>{this.state.message}</h2>
                         </div>

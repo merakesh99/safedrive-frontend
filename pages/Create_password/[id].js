@@ -9,6 +9,8 @@ const CreatePassword = () => {
     const router = useRouter();
     const code = router.query.id;
     console.log("code->", code);
+    const [msg, setMsg] = useState('');
+    const [errmsg, setErrmsg] = useState('');
     const [data, setData] = useState({
         password: '',
         password_confirmation: '',
@@ -31,14 +33,19 @@ const CreatePassword = () => {
             console.log(response.data);
             console.log(response.status);
             if(response.status == 201){
-                this.setState({ message: "User Creation succesfully" })
+                setErrmsg('');
+                setMsg("User Creation succesfully");
                 setTimeout(() => {
                     console.log('login');
                     router.push("/auth/login");
                   }, 4000);
             }
+            
 
-        }).catch(err => console.log(err));
+        }).catch(err => {console.log(err)
+            setMsg('');
+            setErrmsg("Something Went Wrong!")
+        });
     };
 
     // Index.getInitialProps = async () => {
@@ -55,6 +62,18 @@ const CreatePassword = () => {
         <div>
             {/* <Nav2 /> */}
             <div style={{ margin: '180px' }}></div>
+            {msg !== '' ? <div class="form-group">
+                        <div class="text-center my-4 py-3" style={{ backgroundColor: "green" }}>
+                            <h2 style={{ color: "whitesmoke" }}>{msg}</h2>
+                        </div>
+                    </div> : " "}
+                    {errmsg == 'Something Went Wrong!' ? <div class="form-group">
+                        <div class="text-center my-4 py-3" style={{ backgroundColor: "red" }}>
+                            <h2 style={{ color: "whitesmoke" }}>{errmsg}</h2>
+                        </div>
+                    </div> : " "}
+                    
+                    
             <div className="flex content-center items-center justify-center h-full">
                         <div className="w-full lg:w-6/12 px-4">
                             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
