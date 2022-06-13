@@ -4,8 +4,6 @@ import Head from 'next/head'
 import useSound from "use-sound";
 // import sound1 from "../../public/beep.mp3";
 
-
-
 // components
 import CardLineChart from "components/Cards/CardLineChart.js";
 import CardBarChart from "components/Cards/CardBarChart.js";
@@ -17,6 +15,8 @@ import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
 import Admin from "layouts/Admin.js";
 import EntryList from "./EntryList";
 import Tables from "./tables";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Dashboard() {
   // const [play] = useSound(sound1, { volume: 0.2 });
@@ -33,6 +33,7 @@ export default function Dashboard() {
         if (data.success !== "Nothing") {
           console.log("##Alert##");
           // play();
+          toast.warn("Driver Sleep!")
         }
       })
 

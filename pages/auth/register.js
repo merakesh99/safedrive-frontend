@@ -59,16 +59,7 @@ class Register extends Component {
           >
         <div className="container mx-auto px-4 h-full">
           {/*  */}
-          {this.state.message == 'Register Successfully Done, Please Login!' ? <div class="form-group">
-            <div class="text-center my-4 py-3" style={{backgroundColor: "green"}}>
-              <h2 style={{color: "whitesmoke"}}>{this.state.message}</h2>
-            </div>
-          </div>: " "}
-          {this.state.errormessage == 'Wrong Input!!' ? <div class="form-group">
-            <div class="text-center my-4 py-3" style={{backgroundColor: "red"}}>
-              <h2 style={{color: "whitesmoke"}}>{this.state.errormessage}</h2>
-            </div>
-          </div>: " "}
+        
           
           {/*  */}
           <div className="flex content-center items-center justify-center h-full">
@@ -98,6 +89,16 @@ class Register extends Component {
                   </div>
                   <hr className="mt-6 border-b-1 border-blueGray-300" />
                 </div> */}
+                  {this.state.message == 'Register Successfully Done, Please Login!' ? <div class="form-group">
+            <div class="text-center  my-1 py-2" style={{backgroundColor: "green"}}>
+              <h2 style={{color: "whitesmoke"}}>{this.state.message}</h2>
+            </div>
+          </div>: " "}
+          {this.state.errormessage == 'Wrong Input!!' ? <div class="form-group">
+            <div class="text-center my-1 py-2" style={{backgroundColor: "red"}}>
+              <h2 style={{color: "whitesmoke"}}>{this.state.errormessage}</h2>
+            </div>
+          </div>: " "}
                 <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
                   <div className="text-blueGray-400 text-center mb-3 font-bold"><br/>
                     <h2>Sign Up Now</h2>

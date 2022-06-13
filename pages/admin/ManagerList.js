@@ -64,7 +64,7 @@ const ManagerList = () => {
                                             <th scope="col">mobile</th>
                                             <th scope="col">DOB</th>
                                             <th scope="col">Status</th>
-                                            <th scope="col">Action</th>
+                                            {/* <th scope="col">Action</th> */}
                                             {/* <th scope="col">total</th> */}
                                         </tr>
                                     </thead>
@@ -91,14 +91,14 @@ const ManagerList = () => {
                                                     {a.token!==null? <b><i className="fas fa-circle text-orange-500 mr-2"></i>Pending</b> : <b> <i className="fas fa-circle text-emerald-500 mr-2"></i>{" "}Active</b> }
                                                     
                                                 </td>
-                                                <td>
+                                                {/* <td>
                                                 <button
                 className="bg-red-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                 type="button"
               >
                Delete
               </button>
-                                                </td>
+                                                </td> */}
 
 
                                             </tr>

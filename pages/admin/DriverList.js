@@ -107,7 +107,7 @@ const DriverList = () => {
                                             <th scope="col">Phone No</th>
                                             <th scope="col">licence no</th>
                                             <th scope="col">Status</th>
-                                            {/* <th scope="col">Status</th> */}
+                                           
                                         </tr>
                                     </thead>
 
