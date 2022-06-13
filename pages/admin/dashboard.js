@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Head from 'next/head'
 
 import useSound from "use-sound";
 // import sound1 from "../../public/beep.mp3";
@@ -39,6 +40,9 @@ export default function Dashboard() {
 
   return (
     <>
+    <Head>
+      <title>Safe Driver | Dashboard</title>
+    </Head>
       
       {/* <EntryList /> */}
       <div className="w-full xl:w-12 mb-12 xl:mb-0 px-4">

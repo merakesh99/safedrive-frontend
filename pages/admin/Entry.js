@@ -114,7 +114,7 @@ class Entry extends Component {
         console.log(this.state.cars);
         return (
             <>
-                <Head><title> Entry: SafeDriver </title></Head>
+                <Head><title>  SafeDriver | Entry</title></Head>
                 <AdminNavbar />
 
                 <Sidebar />

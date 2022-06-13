@@ -84,6 +84,7 @@ const DriverList = () => {
     // }
     return (
         <>
+          {/* <head><title>Safe Driver | Driver List</title></head> */}
             <AdminNavbar />
             <Sidebar />
             <br />

@@ -4,10 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import Head from 'next/head'
 
 export default function Index() {
   return (
     <>
+    <Head>
+      <title>Safe Driver</title>
+    </Head>
       <IndexNavbar fixed />
       <div className=''>
 
